@@ -15,14 +15,6 @@ export const scripture = {
     "Work with enthusiasm, as though you were working for the Lord rather than for people. Remember that the Lord will reward each one of us for the good we do, whether we are slaves or free.",
 };
 
-export const ethos = {
-  pillars: [
-    "Agentic development practices that amplify human discernment.",
-    "Integrity forged through service in high-stakes environments.",
-    "Continuous learning that uplifts the developer community.",
-  ],
-};
-
 export const contactLinks = [
   {
     label: "LinkedIn",
