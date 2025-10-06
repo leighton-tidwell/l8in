@@ -10,9 +10,9 @@ export const heroCopy = {
 };
 
 export const scripture = {
-  reference: "Ephesians 6:7-8 (NLT)",
+  reference: "Ephesians 6:7 (NLT)",
   text:
-    "Work with enthusiasm, as though you were working for the Lord rather than for people. Remember that the Lord will reward each one of us for the good we do, whether we are slaves or free.",
+    "Work with enthusiasm, as though you were working for the Lord rather than for people.",
 };
 
 export const contactLinks = [
