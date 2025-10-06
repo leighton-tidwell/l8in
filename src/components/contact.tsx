@@ -12,7 +12,7 @@ export function ContactSection() {
       </h2>
       <p className="max-w-xl text-base leading-relaxed text-ink-muted">
         Drop a line if you want to shape agentic development workflows, collaborate on
-        AI-enabled software, or simply talk about disciplined engineering.
+        AI-enabled software, or simply talk about purpose-driven engineering.
       </p>
       <div className="flex flex-wrap gap-6 text-sm uppercase tracking-[0.28em]">
         {contactLinks.map((link) => (
