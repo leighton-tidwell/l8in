@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --tone-bg: #f6f4ee;
+  --tone-bg-strong: #ebe7dd;
+  --tone-ink: #121212;
+  --tone-ink-muted: rgba(18, 18, 18, 0.64);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--tone-bg);
+  --color-background-strong: var(--tone-bg-strong);
+  --color-ink: var(--tone-ink);
+  --color-ink-muted: var(--tone-ink-muted);
+  --font-sans: var(--font-space-grotesk);
+  --font-serif: var(--font-cormorant);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.caps-label {
+  font-size: clamp(0.68rem, 0.6rem + 0.3vw, 0.82rem);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: rgba(20, 23, 29, 0.42);
+}
+
+.divider-dot::before {
+  content: "•";
+  margin: 0 0.75rem;
+}
+
+.verse-block {
+  position: relative;
+  background: var(--color-ink);
+  color: var(--color-background);
+  overflow: hidden;
+}
+
+.verse-block::before,
+.verse-block::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-radius: 999px;
+  opacity: 0.14;
+}
+
+.verse-block::before {
+  inset-inline-start: -18%;
+  inset-block-start: -35%;
+  inline-size: clamp(14rem, 26vw, 18rem);
+  block-size: clamp(14rem, 26vw, 18rem);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.verse-block::after {
+  inset-inline-end: -22%;
+  inset-block-end: -38%;
+  inline-size: clamp(12rem, 22vw, 16rem);
+  block-size: clamp(12rem, 22vw, 16rem);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--tone-bg);
+  color: var(--tone-ink);
+  font-family: var(--font-space-grotesk), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  letter-spacing: 0.01em;
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+::selection {
+  background: rgba(20, 23, 29, 0.08);
+  color: var(--tone-ink);
+}
+
+button:focus-visible,
+ a:focus-visible {
+  outline: 2px solid rgba(20, 23, 29, 0.36);
+  outline-offset: 4px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: clamp(1.02rem, 0.9rem + 0.35vw, 1.2rem);
+  }
 }

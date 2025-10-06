@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# l8in
 
-## Getting Started
+Minimalist portfolio for Leighton Tidwell built with Next.js 15 (App Router) and Tailwind CSS. The site blends typography-first design with a bold scripture banner to introduce Leighton's AI-enabled engineering work and provide a direct contact path.
 
-First, run the development server:
+## Features
+- **Hero spotlight** with editable mission copy, faith statement, and full-width scripture banner.
+- **Contact section** linking to LinkedIn and GitHub with lean typography.
+- Tailored color tokens for an off-white/ink two-tone aesthetic.
+- React Server Components, `next/font` powered typography, and Tailwind 4 utilities.
+
+## Getting started
+Install dependencies, run the dev server, and lint for type-safety:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
+pnpm lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app renders at `http://localhost:3000` and updates automatically when editing files under `src/app`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
+- `src/app` – App Router entry, layout, and page components.
+- `src/components` – Hero and contact sections.
+- `src/content` – Structured copy for easy edits to mission statement and scripture references.
+- `public` – Static assets and icons.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
+Deploy directly to Vercel:
 
-## Learn More
+```bash
+pnpm build
+pnpm start
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+By default, the production build uses Turbopack. Configure environment variables and analytics in `next.config.ts` as needed.
