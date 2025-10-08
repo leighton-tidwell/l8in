@@ -15,6 +15,17 @@ export const scripture = {
     "Work with enthusiasm, as though you were working for the Lord rather than for people.",
 };
 
+export const projects = [
+  {
+    name: "Stinky Pointing Poker",
+    description:
+      "A lightweight planning poker tool built for teams experiencing load issues with the original. Real-time collaborative estimation made simple.",
+    url: "https://stinky-pointing-poker.com",
+    github: "https://github.com/leighton-tidwell/stinky-pointing-poker",
+    tech: "Next.js • React • Supabase",
+  },
+];
+
 export const contactLinks = [
   {
     label: "LinkedIn",
