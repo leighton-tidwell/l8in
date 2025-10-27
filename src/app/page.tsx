@@ -64,6 +64,7 @@ export default function Home() {
     mainEntity: {
       "@type": "Person",
       "@id": `${BASE_URL}#person`,
+      name: "Leighton Tidwell",
     },
   };
 
