@@ -18,14 +18,48 @@ const cormorant = Cormorant_Garamond({
 const sharedDescription =
   "AI-first software engineer blending disciplined craft, agentic workflows, and faith-driven purpose.";
 
+const baseUrl = "https://l8in.tdwl.dev";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "Leighton Tidwell | AI-First Engineer",
   description: sharedDescription,
+  keywords: [
+    "Leighton Tidwell",
+    "Software Engineer",
+    "AI Engineer",
+    "AI-First Development",
+    "Agentic Workflows",
+    "React",
+    "Next.js",
+    "GraphQL",
+    "AWS",
+    "Future",
+    "Claude Code",
+  ],
+  authors: [{ name: "Leighton Tidwell" }],
+  creator: "Leighton Tidwell",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: baseUrl,
+  },
   openGraph: {
     title: "Leighton Tidwell | AI-First Engineer",
     description: sharedDescription,
+    url: baseUrl,
+    siteName: "Leighton Tidwell",
     locale: "en_US",
-    type: "website",
+    type: "profile",
   },
   twitter: {
     card: "summary_large_image",
