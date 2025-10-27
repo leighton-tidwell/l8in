@@ -62,6 +62,7 @@ export default function Home() {
     description:
       "AI-first software engineer blending disciplined craft, agentic workflows, and faith-driven purpose.",
     mainEntity: {
+      "@type": "Person",
       "@id": `${BASE_URL}#person`,
     },
   };
