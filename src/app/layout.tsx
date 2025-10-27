@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Space_Grotesk } from "next/font/google";
+import { BASE_URL } from "@/lib/constants";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -18,10 +19,8 @@ const cormorant = Cormorant_Garamond({
 const sharedDescription =
   "AI-first software engineer blending disciplined craft, agentic workflows, and faith-driven purpose.";
 
-const baseUrl = "https://l8in.tdwl.dev";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(BASE_URL),
   title: "Leighton Tidwell | AI-First Engineer",
   description: sharedDescription,
   keywords: [
@@ -51,12 +50,12 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: baseUrl,
+    canonical: BASE_URL,
   },
   openGraph: {
     title: "Leighton Tidwell | AI-First Engineer",
     description: sharedDescription,
-    url: baseUrl,
+    url: BASE_URL,
     siteName: "Leighton Tidwell",
     locale: "en_US",
     type: "profile",

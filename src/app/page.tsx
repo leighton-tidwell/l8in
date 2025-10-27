@@ -1,16 +1,16 @@
 import { ContactSection } from "@/components/contact";
 import { HeroSection } from "@/components/hero";
 import { ProjectsSection } from "@/components/projects";
+import { BASE_URL } from "@/lib/constants";
 
 export default function Home() {
-  const baseUrl = "https://l8in.tdwl.dev";
 
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Leighton Tidwell",
-    url: baseUrl,
-    image: `${baseUrl}/opengraph-image`,
+    url: BASE_URL,
+    image: `${BASE_URL}/opengraph-image`,
     jobTitle: "Software Engineer",
     description:
       "AI-first software engineer with 9+ years of experience building AI-enabled fitness platforms and mentoring teams on agentic development. Previously delivered mission-critical systems across the DoD and private sector.",
@@ -45,7 +45,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Leighton Tidwell",
-    url: baseUrl,
+    url: BASE_URL,
     description:
       "Personal portfolio of Leighton Tidwell, an AI-first software engineer specializing in agentic workflows and AI-enabled platforms.",
     author: {
@@ -58,11 +58,11 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     name: "Leighton Tidwell | AI-First Engineer",
-    url: baseUrl,
+    url: BASE_URL,
     description:
       "AI-first software engineer blending disciplined craft, agentic workflows, and faith-driven purpose.",
     mainEntity: {
-      "@id": `${baseUrl}#person`,
+      "@id": `${BASE_URL}#person`,
     },
   };
 
