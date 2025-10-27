@@ -2,7 +2,7 @@ export const heroCopy = {
   name: "Leighton Tidwell",
   title: "Software Engineer • AI-First Builder",
   lede:
-    "Engineering AI-enabled fitness platforms and mentoring teams on agentic development at Future.",
+    "Engineering AI-enabled fitness platforms and mentoring teams on agentic development at Future with 9+ years of experience.",
   mission:
     "I build AI-enabled software and agentic workflows—drawing on experience from military to startups—and I pursue every project as an expression of my faith in Christ.",
   summary:
