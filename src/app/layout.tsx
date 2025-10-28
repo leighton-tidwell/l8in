@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import { BASE_URL } from "@/lib/constants";
 import "./globals.css";
 
@@ -82,6 +83,7 @@ export default function RootLayout({
             {children}
           </div>
         </main>
+        <Analytics />
       </body>
     </html>
   );
